@@ -7,11 +7,24 @@ interface Props {
   placeholder?: string;
   required?: boolean;
   error?: string;
+  label?: string;
 }
 const TextField = (props: Props) => {
-  let { type, className, id, name, placeholder, required, error } = props;
+  let {
+    type,
+    className,
+    id,
+    name,
+    placeholder,
+    required,
+    error,
+    label,
+  } = props;
   return (
     <div className="form-group">
+      <label className={label ? "d-block" : "d-none"} htmlFor={id}>
+        {label}
+      </label>
       <input
         type={type}
         className={className}
@@ -34,6 +47,7 @@ TextField.defaultProps = {
   placeholder: "",
   required: false,
   error: "",
+  label: "",
 };
 
 export default TextField;

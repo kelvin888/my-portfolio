@@ -2,7 +2,7 @@ import React from "react";
 
 const Hamburger = () => {
   return (
-    <button className="menu-icon mr-2">
+    <button className="menu-icon mr-2" aria-label="hamburger">
       <span></span>
       <span></span>
       <span></span>

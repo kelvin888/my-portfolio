@@ -35,12 +35,7 @@ const Contact: FC = () => {
 
         <div className="col-md-8">
           {/* <!-- Contact Form --> */}
-          <form
-            id="contact-form"
-            className="contact-form"
-            method="post"
-            action="form/contact.php"
-          >
+          <form id="contact-form" className="contact-form" method="post">
             <div className="messages"></div>
 
             <div className="row">
@@ -52,7 +47,7 @@ const Contact: FC = () => {
                   id="InputName"
                   placeholder="Your name"
                   required={true}
-                  error="Name is required."
+                  error=""
                 />
               </div>
 
@@ -64,7 +59,7 @@ const Contact: FC = () => {
                   name="InputEmail"
                   placeholder="Email address"
                   required={true}
-                  error="Email is required."
+                  error=""
                 />
               </div>
 

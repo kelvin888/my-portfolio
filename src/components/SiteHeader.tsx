@@ -61,27 +61,27 @@ const SiteHeader: FC = () => {
           {/* <!-- social icons --> */}
           <ul className="social-icons list-inline">
             <li className="list-inline-item">
-              <a href="#">
+              <a href="#" aria-label="facebook">
                 <i className="fab fa-facebook-f"></i>
               </a>
             </li>
             <li className="list-inline-item">
-              <a href="#">
+              <a href="#" aria-label="twitter">
                 <i className="fab fa-twitter"></i>
               </a>
             </li>
             <li className="list-inline-item">
-              <a href="#">
+              <a href="#" aria-label="instagram">
                 <i className="fab fa-instagram"></i>
               </a>
             </li>
             <li className="list-inline-item">
-              <a href="#">
+              <a href="#" aria-label="youtube">
                 <i className="fab fa-youtube"></i>
               </a>
             </li>
             <li className="list-inline-item">
-              <a href="#">
+              <a href="#" aria-label="dribble">
                 <i className="fab fa-dribbble"></i>
               </a>
             </li>

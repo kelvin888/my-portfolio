@@ -8,7 +8,7 @@ interface Props {
 const LinkButton = (props: Props) => {
   let { className, children, href } = props;
   return (
-    <a href={href} className={className}>
+    <a href={href} className={className} aria-label="link Button">
       {children}
     </a>
   );

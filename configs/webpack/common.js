@@ -48,8 +48,8 @@ module.exports = {
     new HtmlWebpackPlugin({ template: "index.html.ejs" }),
   ],
   externals: {
-    react: "React",
-    "react-dom": "ReactDOM",
+    React: "react",
+    ReactDOM: "react-dom",
   },
   performance: {
     hints: false,

@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import LinkButton from "../LinkButton";
 
 const Works: FC = () => {
   return (
@@ -161,9 +162,9 @@ const Works: FC = () => {
 
       {/* <!-- more button --> */}
       <div className="load-more text-center mt-4">
-        <a href="javascript:" className="btn btn-default">
+        <LinkButton href="#" className="btn btn-default">
           <i className="fas fa-circle-notch"></i> Load more
-        </a>
+        </LinkButton>
         {/* <!-- numbered pagination (hidden for infinite scroll) --> */}
         <ul className="portfolio-pagination list-inline d-none">
           <li className="list-inline-item">1</li>

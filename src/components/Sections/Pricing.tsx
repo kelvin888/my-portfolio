@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import LinkButton from "../LinkButton";
 
 const Pricing: FC = () => {
   return (
@@ -22,9 +23,9 @@ const Pricing: FC = () => {
                 <li>1 Years of Updates</li>
               </ul>
             </div>
-            <a href="#" className="btn btn-default">
+            <LinkButton href="#" className="btn btn-default">
               Get Started
-            </a>
+            </LinkButton>
           </div>
         </div>
 
@@ -44,9 +45,9 @@ const Pricing: FC = () => {
                 <li>White Labeling</li>
               </ul>
             </div>
-            <a href="#" className="btn btn-default">
+            <LinkButton href="#" className="btn btn-default">
               Get Started
-            </a>
+            </LinkButton>
           </div>
         </div>
 
@@ -65,9 +66,9 @@ const Pricing: FC = () => {
                 <li>3 Years of Updates</li>
               </ul>
             </div>
-            <a href="#" className="btn btn-default">
+            <LinkButton href="#" className="btn btn-default">
               Get Started
-            </a>
+            </LinkButton>
           </div>
         </div>
       </div>
