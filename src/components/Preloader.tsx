@@ -1,13 +1,11 @@
 import React from "react";
+import Spinner from "./Spinner";
 
 const Preloader: React.FC = () => {
   return (
     <div id="preloader">
       <div className="outer">
-        <div className="spinner">
-          <div className="dot1"></div>
-          <div className="dot2"></div>
-        </div>
+        <Spinner />
       </div>
     </div>
   );

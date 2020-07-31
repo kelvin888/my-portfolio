@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import LinkButton from "../LinkButton";
 
 const About: FC = () => {
   return (
@@ -35,12 +36,12 @@ const About: FC = () => {
               </p>
             </div>
           </div>
-          <a href="#" className="btn btn-default mr-3">
+          <LinkButton href="#" className="btn btn-default mr-3">
             <i className="icon-cloud-download"></i>Download CV
-          </a>
-          <a href="#" className="btn btn-alt mt-2 mt-md-0 mt-xs-2">
+          </LinkButton>
+          <LinkButton href="#" className="btn btn-alt mt-2 mt-md-0 mt-xs-2">
             <i className="icon-envelope"></i>Hire me
-          </a>
+          </LinkButton>
         </div>
       </div>
     </section>

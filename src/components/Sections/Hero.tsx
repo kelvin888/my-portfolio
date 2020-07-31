@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import LinkButton from "../LinkButton";
 
 const Hero: FC = () => {
   return (
@@ -16,16 +17,16 @@ const Hero: FC = () => {
           could see his brown belly, slightly domed and divided by arches into
           stiff sections.
         </p>
-        <a href="#" className="btn btn-default btn-lg mr-3">
+        <LinkButton className="btn btn-default btn-lg mr-3">
           <i className="icon-grid"></i>View Portfolio
-        </a>
+        </LinkButton>
         <div
           className="spacer d-md-none d-lg-none d-sm-none"
           data-height="10"
         ></div>
-        <a href="#" className="btn btn-border-light btn-lg">
+        <LinkButton className="btn btn-border-light btn-lg">
           <i className="icon-envelope"></i>Hire me
-        </a>
+        </LinkButton>
       </div>
       <div className="overlay"></div>
     </section>

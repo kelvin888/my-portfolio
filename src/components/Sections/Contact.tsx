@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import TextField from "../TextField";
 
 const Contact: FC = () => {
   return (
@@ -44,51 +45,39 @@ const Contact: FC = () => {
 
             <div className="row">
               <div className="column col-md-6">
-                {/* <!-- Name input --> */}
-                <div className="form-group">
-                  <input
-                    type="text"
-                    className="form-control"
-                    name="InputName"
-                    id="InputName"
-                    placeholder="Your name"
-                    required={true}
-                    data-error="Name is required."
-                  />
-                  <div className="help-block with-errors"></div>
-                </div>
+                <TextField
+                  type="text"
+                  className="form-control"
+                  name="InputName"
+                  id="InputName"
+                  placeholder="Your name"
+                  required={true}
+                  error="Name is required."
+                />
               </div>
 
               <div className="column col-md-6">
-                {/* <!-- Email input --> */}
-                <div className="form-group">
-                  <input
-                    type="email"
-                    className="form-control"
-                    id="InputEmail"
-                    name="InputEmail"
-                    placeholder="Email address"
-                    required={true}
-                    data-error="Email is required."
-                  />
-                  <div className="help-block with-errors"></div>
-                </div>
+                <TextField
+                  type="email"
+                  className="form-control"
+                  id="InputEmail"
+                  name="InputEmail"
+                  placeholder="Email address"
+                  required={true}
+                  error="Email is required."
+                />
               </div>
 
               <div className="column col-md-12">
-                {/* <!-- Email input --> */}
-                <div className="form-group">
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="InputSubject"
-                    name="InputSubject"
-                    placeholder="Subject"
-                    required={true}
-                    data-error="Subject is required."
-                  />
-                  <div className="help-block with-errors"></div>
-                </div>
+                <TextField
+                  type="text"
+                  className="form-control"
+                  id="InputSubject"
+                  name="InputSubject"
+                  placeholder="Enter a Subject"
+                  required={true}
+                  error=""
+                />
               </div>
 
               <div className="column col-md-12">
