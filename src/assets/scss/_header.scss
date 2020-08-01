@@ -110,7 +110,7 @@ header {
     li {
       line-height: 2.5;
       position: relative;
-      a {
+      span {
         margin-left: 0;
         padding: 0;
         @include transition(0.3s);

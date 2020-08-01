@@ -3,7 +3,7 @@ import TextField from "../TextField";
 
 const Contact: FC = () => {
   return (
-    <section id="contact" className="shadow-blue white-bg padding">
+    <section id="contact-section" className="shadow-blue white-bg padding">
       <h3 className="section-title">Get in touch</h3>
       <div className="spacer" data-height="80"></div>
 

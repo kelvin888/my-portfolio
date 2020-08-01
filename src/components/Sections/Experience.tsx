@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 const Experience: FC = () => {
   return (
-    <section id="resume" className="shadow-blue white-bg padding">
+    <section id="resume-section" className="shadow-blue white-bg padding">
       <h3 className="section-title">Experience</h3>
       <div className="spacer" data-height="80"></div>
 

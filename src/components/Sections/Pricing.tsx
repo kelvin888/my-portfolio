@@ -3,7 +3,7 @@ import LinkButton from "../LinkButton";
 
 const Pricing: FC = () => {
   return (
-    <section id="price" className="shadow-blue white-bg padding">
+    <section id="price-section" className="shadow-blue white-bg padding">
       <h3 className="section-title">Pricing table</h3>
       <div className="spacer" data-height="97"></div>
 

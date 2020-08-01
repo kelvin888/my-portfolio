@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 const Blog: FC = () => {
   return (
-    <section id="blog" className="shadow-blue white-bg padding">
+    <section id="blog-section" className="shadow-blue white-bg padding">
       <h3 className="section-title">Recent posts</h3>
       <div className="spacer" data-height="80"></div>
 

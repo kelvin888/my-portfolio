@@ -1,6 +1,18 @@
 import React, { FC } from "react";
+import kelvinHood from "../assets/img/kelv-passport.png";
 
 const SiteHeader: FC = () => {
+  const scrollToNode = (offset: number) => {
+    window.scrollTo({ top: offset, left: 0, behavior: "smooth" });
+
+    // let node = document.querySelector(`#${nodeId}-section`);
+    // console.log("node", node);
+    // node.scrollIntoView({
+    //   behavior: "smooth",
+    //   block: "start",
+    //   inline: "start",
+    // });
+  };
   return (
     <header className="left float-left shadow-dark" id="header">
       <button type="button" className="close" aria-label="Close">
@@ -8,7 +20,11 @@ const SiteHeader: FC = () => {
       </button>
       <div className="header-inner d-flex align-items-start flex-column">
         <a href="index.html">
-          <img src="https://via.placeholder.com/70x70" alt="Kelvin Orhungul" />
+          <img
+            src={kelvinHood}
+            style={{ borderRadius: "50%", width: "129px" }}
+            alt="Kelvin Orhungul"
+          />
         </a>
         <a href="index.html" className="site-title dot mt-3">
           Kelvin Orhungul
@@ -19,39 +35,43 @@ const SiteHeader: FC = () => {
         <nav>
           <ul className="vertical-menu scrollspy">
             <li>
-              <a href="#home" className="active">
+              <span
+                id="home"
+                onClick={() => scrollToNode(50)}
+                className="active"
+              >
                 <i className="icon-home"></i>Home
-              </a>
+              </span>
             </li>
             <li>
-              <a href="#about">
+              <span id="about" onClick={() => scrollToNode(400)}>
                 <i className="icon-user"></i>About
-              </a>
+              </span>
             </li>
             <li>
-              <a href="#services">
+              <span id="services" onClick={() => scrollToNode(600)}>
                 <i className="icon-bulb"></i>Services
-              </a>
+              </span>
             </li>
             <li>
-              <a href="#resume">
+              <span id="resume" onClick={() => scrollToNode(800)}>
                 <i className="icon-graduation"></i>Resume
-              </a>
+              </span>
             </li>
             <li>
-              <a href="#works">
+              <span id="works" onClick={() => scrollToNode(1000)}>
                 <i className="icon-grid"></i>Works
-              </a>
+              </span>
             </li>
             <li>
-              <a href="#blog">
+              <span id="blog" onClick={() => scrollToNode(1200)}>
                 <i className="icon-pencil"></i>Blog
-              </a>
+              </span>
             </li>
             <li>
-              <a href="#contact">
+              <span id="contact" onClick={() => scrollToNode(1400)}>
                 <i className="icon-phone"></i>Contact
-              </a>
+              </span>
             </li>
           </ul>
         </nav>

@@ -1,15 +1,20 @@
 import React, { FC } from "react";
 import LinkButton from "../LinkButton";
+import kelvinHood from "../../assets/img/kelv-passport.png";
 
 const About: FC = () => {
   return (
-    <section id="about" className="shadow-blue white-bg padding">
+    <section id="about-section" className="shadow-blue white-bg padding">
       <h3 className="section-title">About Me</h3>
       <div className="spacer" data-height="80"></div>
 
       <div className="row">
         <div className="col-md-3">
-          <img src="https://via.placeholder.com/150x150" alt="about" />
+          <img
+            src={kelvinHood}
+            alt="about"
+            style={{ width: "150px", borderRadius: "50%" }}
+          />
         </div>
         <div className="col-md-9">
           <h2 className="mt-4 mt-md-0 mb-4">Hello,</h2>

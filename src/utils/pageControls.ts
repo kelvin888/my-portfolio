@@ -25,7 +25,7 @@ export function initializePage() {
   /*=========================================================================
      Add (nav-link) class to main menu.
      =========================================================================*/
-  document.querySelector(".vertical-menu li a").classList.add("nav-link");
+  document.querySelector(".vertical-menu li span").classList.add("nav-link");
 
   /*=========================================================================
      Progress bar animation with Waypoint JS
@@ -42,7 +42,7 @@ export function initializePage() {
 
   for (let i = 0; i < bg_img.length; i++) {
     const src = bg_img[i].getAttribute("data-image-src");
-    bg_img[i].setAttribute("style", `backgroundImage: url(${src}); `);
+    bg_img[i].setAttribute("style", `background-image: url(${src}); `);
   }
 
   /*=========================================================================

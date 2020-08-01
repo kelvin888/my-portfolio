@@ -51,13 +51,13 @@ class App extends React.Component<Record<string, unknown>, undefined> {
 
             <Works />
 
-            <Pricing />
+            {/* <Pricing />
 
-            <Testimonials />
+            <Testimonials /> */}
 
             <Clients />
 
-            <Blog />
+            {/* <Blog /> */}
 
             <Contact />
           </MainContentArea>

@@ -12,5 +12,6 @@
   "include": ["./src/**/*"],
   "awesomeTypescriptLoaderOptions": {
     "reportFiles": ["./src/**/*"]
-  }
+  },
+  "files": ["custom.d.ts"]
 }

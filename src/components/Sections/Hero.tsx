@@ -1,12 +1,13 @@
 import React, { FC } from "react";
 import LinkButton from "../LinkButton";
+import heroBg from "../../assets/img/kelvin.jpg";
 
 const Hero: FC = () => {
   return (
     <section
       className="hero background parallax shadow-dark d-flex align-items-center"
-      id="home"
-      data-image-src="https://via.placeholder.com/900x600"
+      id="home-section"
+      data-image-src={heroBg}
     >
       <div className="cta mx-auto mt-2">
         <h1 className="mt-0 mb-4">
