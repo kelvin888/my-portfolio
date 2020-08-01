@@ -1,25 +1,18 @@
-import { fade } from "./functions";
+import { fade, openMobileSidebar, closeMobileSidebar } from "./functions";
 
 export function initializePage() {
-  /*=========================================================================
-        Preloader
-    =========================================================================*/
+  window.scrollTo({ behavior: "smooth", top: 0 });
+  //preloader
   fade("out", 500, document.querySelector("#preloader"));
 
   document.querySelector(".menu-icon").addEventListener("click", function () {
-    document.querySelector("header.left").classList.toggle("open");
-    document
-      .querySelectorAll(".mobile-header, main.content")
-      .forEach((el) => el.classList.toggle("push"));
+    openMobileSidebar();
   });
 
   document
     .querySelector("main.content, header.left button.close")
     .addEventListener("click", function () {
-      document.querySelector("header.left").classList.remove("open");
-      document
-        .querySelectorAll(".mobile-header, main.content")
-        .forEach((el) => el.classList.remove("push"));
+      closeMobileSidebar();
     });
 
   /*=========================================================================

@@ -1,17 +1,11 @@
 import React, { FC } from "react";
 import kelvinHood from "../assets/img/kelv-passport.png";
+import { closeMobileSidebar } from "../utils/functions";
 
 const SiteHeader: FC = () => {
   const scrollToNode = (offset: number) => {
     window.scrollTo({ top: offset, left: 0, behavior: "smooth" });
-
-    // let node = document.querySelector(`#${nodeId}-section`);
-    // console.log("node", node);
-    // node.scrollIntoView({
-    //   behavior: "smooth",
-    //   block: "start",
-    //   inline: "start",
-    // });
+    console.log("window position", window.scrollY);
   };
   return (
     <header className="left float-left shadow-dark" id="header">
@@ -37,39 +31,79 @@ const SiteHeader: FC = () => {
             <li>
               <span
                 id="home"
-                onClick={() => scrollToNode(50)}
+                onClick={() => {
+                  closeMobileSidebar();
+                  scrollToNode(0);
+                }}
                 className="active"
               >
                 <i className="icon-home"></i>Home
               </span>
             </li>
             <li>
-              <span id="about" onClick={() => scrollToNode(400)}>
+              <span
+                id="about"
+                onClick={() => {
+                  closeMobileSidebar();
+                  scrollToNode(720);
+                }}
+              >
                 <i className="icon-user"></i>About
               </span>
             </li>
             <li>
-              <span id="services" onClick={() => scrollToNode(600)}>
+              <span
+                id="skills"
+                onClick={() => {
+                  closeMobileSidebar();
+                  scrollToNode(1328);
+                }}
+              >
+                <i className="icon-user"></i>Skills
+              </span>
+            </li>
+            <li>
+              <span
+                id="services"
+                onClick={() => {
+                  closeMobileSidebar();
+                  scrollToNode(2187);
+                }}
+              >
                 <i className="icon-bulb"></i>Services
               </span>
             </li>
             <li>
-              <span id="resume" onClick={() => scrollToNode(800)}>
+              <span
+                id="resume"
+                onClick={() => {
+                  closeMobileSidebar();
+                  scrollToNode(2964);
+                }}
+              >
                 <i className="icon-graduation"></i>Resume
               </span>
             </li>
             <li>
-              <span id="works" onClick={() => scrollToNode(1000)}>
+              <span
+                id="works"
+                onClick={() => {
+                  closeMobileSidebar();
+                  scrollToNode(3870);
+                }}
+              >
                 <i className="icon-grid"></i>Works
               </span>
             </li>
+
             <li>
-              <span id="blog" onClick={() => scrollToNode(1200)}>
-                <i className="icon-pencil"></i>Blog
-              </span>
-            </li>
-            <li>
-              <span id="contact" onClick={() => scrollToNode(1400)}>
+              <span
+                id="contact"
+                onClick={() => {
+                  closeMobileSidebar();
+                  scrollToNode(4582);
+                }}
+              >
                 <i className="icon-phone"></i>Contact
               </span>
             </li>

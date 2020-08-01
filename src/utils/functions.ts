@@ -22,3 +22,17 @@ export function fade(type: string, ms: number, el: HTMLElement): void {
 
   const fading = window.setInterval(func, interval);
 }
+
+export function openMobileSidebar() {
+  document.querySelector("header.left").classList.toggle("open");
+  document
+    .querySelectorAll(".mobile-header, main.content")
+    .forEach((el) => el.classList.toggle("push"));
+}
+
+export function closeMobileSidebar() {
+  document.querySelector("header.left").classList.remove("open");
+  document
+    .querySelectorAll(".mobile-header, main.content")
+    .forEach((el) => el.classList.remove("push"));
+}

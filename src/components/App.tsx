@@ -26,6 +26,39 @@ import "./../assets/scss/App.scss";
 class App extends React.Component<Record<string, unknown>, undefined> {
   componentDidMount() {
     initializePage();
+    console.log(
+      "Home",
+      document.querySelector("#home-section").getBoundingClientRect(),
+    );
+    console.log(
+      "about",
+      document.querySelector("#about-section").getBoundingClientRect(),
+    );
+    console.log(
+      "skills",
+      document.querySelector("#skills-section").getBoundingClientRect(),
+    );
+    console.log(
+      "services",
+      document.querySelector("#services-section").getBoundingClientRect(),
+    );
+    console.log(
+      "resume",
+      document.querySelector("#resume-section").getBoundingClientRect(),
+    );
+    console.log(
+      "works",
+      document.querySelector("#works-section").getBoundingClientRect(),
+    );
+
+    console.log(
+      "clients",
+      document.querySelector("#clients-section").getBoundingClientRect(),
+    );
+    console.log(
+      "contact",
+      document.querySelector("#contact-section").getBoundingClientRect(),
+    );
   }
 
   public render() {
