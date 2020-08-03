@@ -1,11 +1,13 @@
-import React, { FC } from "react";
-import kelvinHood from "../assets/img/kelv-passport.png";
-import { closeMobileSidebar } from "../utils/functions";
+import React, { FC, useState } from "react";
+import kelvinHood from "../assets/img/kelv-face.png";
+import { closeMobileSidebar, scrollToNode } from "../utils/functions";
 
 const SiteHeader: FC = () => {
-  const scrollToNode = (offset: number) => {
-    window.scrollTo({ top: offset, left: 0, behavior: "smooth" });
-    console.log("window position", window.scrollY);
+  const [activeLink, setActiveLink] = useState("home");
+  const handleSidebarClick = (link: string, nodePosition: number) => {
+    closeMobileSidebar();
+    scrollToNode(nodePosition);
+    setActiveLink(link);
   };
   return (
     <header className="left float-left shadow-dark" id="header">
@@ -13,14 +15,14 @@ const SiteHeader: FC = () => {
         <span aria-hidden="true">&times;</span>
       </button>
       <div className="header-inner d-flex align-items-start flex-column">
-        <a href="index.html">
+        <a href="/">
           <img
             src={kelvinHood}
             style={{ borderRadius: "50%", width: "129px" }}
             alt="Kelvin Orhungul"
           />
         </a>
-        <a href="index.html" className="site-title dot mt-3">
+        <a href="/" className="site-title dot mt-3">
           Kelvin Orhungul
         </a>
         <span className="site-slogan">Web Developer</span>
@@ -32,10 +34,9 @@ const SiteHeader: FC = () => {
               <span
                 id="home"
                 onClick={() => {
-                  closeMobileSidebar();
-                  scrollToNode(0);
+                  handleSidebarClick("home", 0);
                 }}
-                className="active"
+                className={activeLink === "home" ? "active" : ""}
               >
                 <i className="icon-home"></i>Home
               </span>
@@ -44,9 +45,9 @@ const SiteHeader: FC = () => {
               <span
                 id="about"
                 onClick={() => {
-                  closeMobileSidebar();
-                  scrollToNode(720);
+                  handleSidebarClick("about", 720 - 50);
                 }}
+                className={activeLink === "about" ? "active" : ""}
               >
                 <i className="icon-user"></i>About
               </span>
@@ -55,9 +56,9 @@ const SiteHeader: FC = () => {
               <span
                 id="skills"
                 onClick={() => {
-                  closeMobileSidebar();
-                  scrollToNode(1328);
+                  handleSidebarClick("skills", 1328 - 50);
                 }}
+                className={activeLink === "skills" ? "active" : ""}
               >
                 <i className="icon-user"></i>Skills
               </span>
@@ -66,9 +67,9 @@ const SiteHeader: FC = () => {
               <span
                 id="services"
                 onClick={() => {
-                  closeMobileSidebar();
-                  scrollToNode(2187);
+                  handleSidebarClick("services", 2187 - 50);
                 }}
+                className={activeLink === "services" ? "active" : ""}
               >
                 <i className="icon-bulb"></i>Services
               </span>
@@ -77,9 +78,9 @@ const SiteHeader: FC = () => {
               <span
                 id="resume"
                 onClick={() => {
-                  closeMobileSidebar();
-                  scrollToNode(2964);
+                  handleSidebarClick("resume", 2964 - 50);
                 }}
+                className={activeLink === "resume" ? "active" : ""}
               >
                 <i className="icon-graduation"></i>Resume
               </span>
@@ -88,9 +89,9 @@ const SiteHeader: FC = () => {
               <span
                 id="works"
                 onClick={() => {
-                  closeMobileSidebar();
-                  scrollToNode(3870);
+                  handleSidebarClick("works", 3870 - 50);
                 }}
+                className={activeLink === "works" ? "active" : ""}
               >
                 <i className="icon-grid"></i>Works
               </span>
@@ -100,9 +101,9 @@ const SiteHeader: FC = () => {
               <span
                 id="contact"
                 onClick={() => {
-                  closeMobileSidebar();
-                  scrollToNode(4582);
+                  handleSidebarClick("contact", 4582 - 50);
                 }}
+                className={activeLink === "contact" ? "active" : ""}
               >
                 <i className="icon-phone"></i>Contact
               </span>
@@ -115,17 +116,29 @@ const SiteHeader: FC = () => {
           {/* <!-- social icons --> */}
           <ul className="social-icons list-inline">
             <li className="list-inline-item">
-              <a href="#" aria-label="facebook">
+              <a
+                href="https://www.facebook.com/kelvin.orhungul"
+                aria-label="facebook"
+                target="_blank"
+              >
                 <i className="fab fa-facebook-f"></i>
               </a>
             </li>
             <li className="list-inline-item">
-              <a href="#" aria-label="twitter">
+              <a
+                href="https://twitter.com/KelvinOrhungul"
+                aria-label="twitter"
+                target="_blank"
+              >
                 <i className="fab fa-twitter"></i>
               </a>
             </li>
             <li className="list-inline-item">
-              <a href="#" aria-label="instagram">
+              <a
+                href="https://www.instagram.com/kelvinorhungul/"
+                aria-label="instagram"
+                target="_blank"
+              >
                 <i className="fab fa-instagram"></i>
               </a>
             </li>
@@ -142,7 +155,7 @@ const SiteHeader: FC = () => {
           </ul>
 
           {/* <!-- copyright --> */}
-          <span className="copyright">© 2020 Bako Template</span>
+          <span className="copyright">© 2020 Kelvin Orhungul</span>
         </div>
       </div>
     </header>

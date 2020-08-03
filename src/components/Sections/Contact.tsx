@@ -14,21 +14,21 @@ const Contact: FC = () => {
             <i className="icon-phone"></i>
             <div className="details">
               <h5>Phone</h5>
-              <span>+44 1632 960428</span>
+              <span>+2348032626521</span>
             </div>
           </div>
           <div className="contact-info mb-5">
             <i className="icon-envelope"></i>
             <div className="details">
               <h5>Email address</h5>
-              <span>hello@bako.com</span>
+              <span>kelvin.orhungul@yahoo.com</span>
             </div>
           </div>
           <div className="contact-info">
             <i className="icon-location-pin"></i>
             <div className="details">
               <h5>Location</h5>
-              <span>West Palm Beach, 4669 Travis Street</span>
+              <span>20 Abiola St. Ketu-Alapere, Lagos</span>
             </div>
           </div>
         </div>

@@ -36,3 +36,8 @@ export function closeMobileSidebar() {
     .querySelectorAll(".mobile-header, main.content")
     .forEach((el) => el.classList.remove("push"));
 }
+
+export const scrollToNode = (offset: number) => {
+  window.scrollTo({ top: offset, left: 0, behavior: "smooth" });
+  console.log("window position", window.scrollY);
+};
