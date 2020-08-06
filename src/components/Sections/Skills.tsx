@@ -7,9 +7,10 @@ const Skills: FC = () => {
       <div className="spacer" data-height="80"></div>
 
       <p className="mb-0">
-        Far far away, behind the word mountains, far from the countries Vokalia
-        and Consonantia, there live the blind texts. Separated they live in
-        Bookmarksgrove right at the coast of the Semantics
+        The frontend technologies have continuously evolved and will continue
+        even in the future. I have the requisite skills to build web
+        applications but my most valuable skill is the desire to continue
+        learning and stay informed.
       </p>
 
       <div className="row mt-5">
@@ -17,7 +18,7 @@ const Skills: FC = () => {
           {/* <!-- skill item --> */}
           <div className="skill-item">
             <div className="skill-info clearfix">
-              <h4 className="float-left mb-3 mt-0">WordPress</h4>
+              <h4 className="float-left mb-3 mt-0">REACT</h4>
               <span className="float-right">85%</span>
             </div>
             <div className="progress">
@@ -57,8 +58,8 @@ const Skills: FC = () => {
           {/* <!-- skill item --> */}
           <div className="skill-item">
             <div className="skill-info clearfix">
-              <h4 className="float-left mb-3 mt-0">jQuery</h4>
-              <span className="float-right">60%</span>
+              <h4 className="float-left mb-3 mt-0">Javascript</h4>
+              <span className="float-right">80%</span>
             </div>
             <div className="progress">
               <div
@@ -77,7 +78,7 @@ const Skills: FC = () => {
           {/* <!-- skill item --> */}
           <div className="skill-item">
             <div className="skill-info clearfix">
-              <h4 className="float-left mb-3 mt-0">Sketch</h4>
+              <h4 className="float-left mb-3 mt-0">Typescript</h4>
               <span className="float-right">70%</span>
             </div>
             <div className="progress">

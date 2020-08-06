@@ -35,23 +35,6 @@ const Works: FC = () => {
       {/* <!-- portolio wrapper --> */}
       <div className="row portfolio-wrapper">
         {/* <!-- portfolio item --> */}
-        <div className="col-md-4 col-sm-6 grid-item video">
-          <a href="https://3asecurity.co.uk">
-            <div className="portfolio-item">
-              <div className="details">
-                <h4 className="title">3a Security</h4>
-                <span className="term">Web Application, Security</span>
-              </div>
-              <span className="plus-icon">+</span>
-              <div className="thumb">
-                <img src={threeA} alt="Portfolio-title" />
-                <div className="mask"></div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        {/* <!-- portfolio item --> */}
         <div className="col-md-4 col-sm-6 grid-item creative design">
           <a href="http://starturn.ng">
             <div className="portfolio-item">
@@ -64,6 +47,25 @@ const Works: FC = () => {
               <span className="plus-icon">+</span>
               <div className="thumb">
                 <img src={esusu} alt="Portfolio-title" />
+                <div className="mask"></div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        {/* <!-- portfolio item --> */}
+        <div className="col-md-4 col-sm-6 grid-item video">
+          <a href="https://3asecurity.co.uk">
+            <div className="portfolio-item">
+              <div className="details">
+                <h4 className="title">3a Security</h4>
+                <span className="term">
+                  Web Application, Credit Card Security
+                </span>
+              </div>
+              <span className="plus-icon">+</span>
+              <div className="thumb">
+                <img src={threeA} alt="Portfolio-title" />
                 <div className="mask"></div>
               </div>
             </div>

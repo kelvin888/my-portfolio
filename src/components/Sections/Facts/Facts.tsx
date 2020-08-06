@@ -11,7 +11,7 @@ const Facts: FC = () => {
       <div className="row relative z-1">
         <div className="col-md-3 col-sm-6">
           <FactItem
-            count={200}
+            count={2}
             name="Projects Completed"
             icon={<i className="icon-like icon-circle"></i>}
           />
@@ -19,22 +19,22 @@ const Facts: FC = () => {
         <div className="col-md-3 col-sm-6">
           <FactItem
             count={2765}
-            name="Cup of coffee"
+            name="Cups of coffee"
             icon={<i className="icon-cup icon-circle"></i>}
           />
         </div>
         <div className="col-md-3 col-sm-6">
           <FactItem
-            count={350}
+            count={2}
             name="Happy Customers"
             icon={<i className="icon-emotsmile icon-circle"></i>}
           />
         </div>
         <div className="col-md-3 col-sm-6">
           <FactItem
-            count={29}
-            name="Awards won"
-            icon={<i className="icon-trophy icon-circle"></i>}
+            count={5}
+            name="Ongoing projects"
+            icon={<i className="icon-energy icon-circle"></i>}
           />
         </div>
       </div>

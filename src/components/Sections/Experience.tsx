@@ -10,40 +10,44 @@ const Experience: FC = () => {
       <div className="timeline">
         <div className="entry">
           <div className="title">
-            <span>2019 - Present</span>
+            <span>June 2018 - present</span>
           </div>
           <div className="body">
-            <h4 className="mt-0">Academic Degree</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean
-              commodo ligula eget dolor aenean massa.
-            </p>
+            <h4 className="mt-0">Software Engineer(Frontend)</h4>
+            <p>Africa Prudential PLC, Lagos</p>
           </div>
         </div>
+
         <div className="entry">
           <div className="title">
-            <span>2018 - 2015</span>
+            <span>Jan 2018 - May 2018</span>
           </div>
           <div className="body">
-            <h4 className="mt-0">Bachelor’s Degree</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean
-              commodo ligula eget dolor aenean massa.
-            </p>
+            <h4 className="mt-0">Software Engineer(PHP)</h4>
+            <p>Thinkshifts Ltd, Lagos</p>
           </div>
         </div>
+
         <div className="entry">
           <div className="title">
-            <span>2015 - 2012</span>
+            <span>Aug 2017 - Dec 2017</span>
           </div>
           <div className="body">
-            <h4 className="mt-0">Honours Degree</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean
-              commodo ligula eget dolor aenean massa.
-            </p>
+            <h4 className="mt-0">Java Trainer</h4>
+            <p>Aptech Computer Education, Lagos</p>
           </div>
         </div>
+
+        <div className="entry">
+          <div className="title">
+            <span>June 2011 - June 2017</span>
+          </div>
+          <div className="body">
+            <h4 className="mt-0">Java Developer</h4>
+            <p>Panet Technologies Limited, Makurdi. </p>
+          </div>
+        </div>
+
         <span className="timeline-line"></span>
       </div>
     </section>

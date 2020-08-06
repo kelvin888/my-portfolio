@@ -15,15 +15,14 @@ const Hero: FC = () => {
           I’m Kelvin Orhungul<span className="dot"></span>
         </h1>
         <p className="mb-4">
-          He lay on his armour-like back, and if he lifted his head a little he
-          could see his brown belly, slightly domed and divided by arches into
-          stiff sections.
+          Frontend engineer who likes to speak only as much as necessary and
+          lets the code do the talking.
         </p>
         <LinkButton
           className="btn btn-default btn-lg mr-3"
           onClick={() => scrollToNode(3870 - 50)}
         >
-          <i className="icon-grid"></i>View Portfolio
+          <i className="icon-grid"></i>View Some of my works
         </LinkButton>
         <div
           className="spacer d-md-none d-lg-none d-sm-none"
