@@ -67,7 +67,7 @@ const Skills: FC = () => {
                 role="progressbar"
                 aria-valuemin={0}
                 aria-valuemax={100}
-                aria-valuenow={60}
+                aria-valuenow={80}
               ></div>
             </div>
             <div className="spacer d-md-none d-lg-none" data-height="50"></div>
